@@ -1,0 +1,133 @@
+/* src/App.css */
+
+.logo{
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+} 
+
+
+
+body {
+  
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.navbar {
+  background-color:#6F8197;
+  padding: 35px;
+  margin-left: 180px;
+  border-top: 200px;
+  border-bottom: 300px;
+
+
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+ margin-left: 750px;
+ 
+ 
+  
+}
+
+.navbar li {
+  display:inline-block;
+
+ 
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 80px;
+  display: block;
+
+}
+
+.navbar a:hover{
+  background-color: aliceblue;
+}
+
+.content {
+  padding: 20px;
+  margin-top: -150px;
+
+}
+
+.landing{
+  margin-left: 70px;;
+  width: 40%;
+  color: #1C375B;
+}
+.box{
+  padding:20px;
+  background-color:#D2544A;
+  color: #FFF;
+  margin-top:10px;
+  margin-left:70px;
+  border-radius:15px;
+  padding-left:125px;
+  padding-right:125px;
+  font-weight: bold;
+
+
+
+}
+.dot1{
+  background-color:#D2544A;
+  margin-top:10px;
+  margin-left:70px;
+  margin-right: -50px;
+ 
+  border-radius:155px;
+  width: 1%;
+  
+}
+
+.dot{
+ list-style-type: none;
+ display: flex;
+ align-items: baseline;
+}
+
+.illus{
+  margin-left: 750px;
+
+}
+
+.logotop{
+  margin-right: 440px;
+  margin-top: -470px;
+  margin-bottom: 250px;
+  margin-left: 20px;
+
+}
+
+.doubt{
+  padding:20px;
+  background-image:linear-gradient(to LEFT, #1C375B  , #fff);
+  color: #FFF;
+  margin-top:10px;
+  margin-bottom: 70px;
+  margin-left:70px;
+  border-radius:15px;
+  padding-top: 20px;
+  padding-left:125px;
+  padding-right:125px;
+  font-weight: bold;
+  margin-left: 150px;
+
+}
+
+
+.end{
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  
+}

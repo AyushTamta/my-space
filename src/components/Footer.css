@@ -1,0 +1,45 @@
+.footer {
+    padding: 30px 20px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: center; /* Center align the contact items horizontally */
+    flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+    gap: 20px; /* Space between the contact items */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateX(5px);
+}
+
+.contact-icon {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #ecf0f1;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 16px;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}

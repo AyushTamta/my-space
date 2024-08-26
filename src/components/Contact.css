@@ -1,0 +1,73 @@
+.contact {
+    padding: 40px;
+    background: linear-gradient(to right, #f9f9f9, #ebedee); /* Smooth gradient background */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 1200px;
+    margin: 0 auto; /* Center align the contact section */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 40px; /* Space between contact info and profile picture */
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateX(5px);
+}
+
+.contact-icon {
+    margin-right: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500; /* Slightly bolder text */
+}
+
+.contact-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.profile-picture {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Circular profile image */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
