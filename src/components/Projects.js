@@ -96,7 +96,7 @@ function Projects() {
         window.addEventListener('resize', calculateNonOverlappingPositions);
 
         return () => window.removeEventListener('resize', calculateNonOverlappingPositions);
-    }, []);
+    }, [projects.length]); // Add projects.length to the dependency array
 
     useEffect(() => {
         if (hoveredIndex !== null) {
