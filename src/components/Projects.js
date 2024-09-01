@@ -29,7 +29,7 @@ function Projects() {
         {
             id: 3,
             title: 'Cow-boy Shooting',
-            description: 'An Artificial Intelligence powered web-app that tells you details of your invoice, not in just one language, but in multiple.',
+            description: 'Get ready to sock-up for ultimate cowbow fight, a simple scoring game built in Javascript ',
             link: 'https://cowboy-shooting.netlify.app/',
             image: project3Image,
         },
@@ -96,7 +96,7 @@ function Projects() {
         window.addEventListener('resize', calculateNonOverlappingPositions);
 
         return () => window.removeEventListener('resize', calculateNonOverlappingPositions);
-    }, [projects.length]); // Add projects.length to the dependency array
+    }, []);
 
     useEffect(() => {
         if (hoveredIndex !== null) {
@@ -108,7 +108,8 @@ function Projects() {
 
     return (
         <section id="projects" className="projects">
-            <h2>Projects</h2>
+            <h2>Projects </h2>
+            <h1>hover on astronauts to explore</h1>
             <div className={`projects-container ${isPaused ? 'paused' : 'rotate'}`} ref={containerRef}>
                 {projects.map((project, index) => {
                     const { x, y } = positions[index] || { x: 0, y: 0 };
