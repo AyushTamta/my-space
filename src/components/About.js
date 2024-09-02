@@ -43,8 +43,8 @@ function About() {
             <div className="about-container">
                 <div className="profile-photo-container">
                     <div className="photo-wrapper">
-                        <img src={profilePhoto1} alt="Profile Photo 1" className="profile-photo front" />
-                        <img src={profilePhoto2} alt="Profile Photo 2" className="profile-photo back" />
+                        <img src={profilePhoto1} alt="" className="profile-photo front" />
+                        <img src={profilePhoto2} alt="" className="profile-photo back" />
                     </div>
                 </div>
 
