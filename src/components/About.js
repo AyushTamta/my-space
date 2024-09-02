@@ -1,39 +1,28 @@
 import React, { useRef } from 'react';
-import './About.css'; // Import your CSS file
+import './About.css'; // Ensure the path is correct
 
-// Import the profile photo
-import profilePhoto from './photo.jpg';
+// Import the profile photos
+import profilePhoto1 from './photo6.jpg';
+import profilePhoto2 from './photo5.jpg';
 
 function About() {
-    // Create a reference to the About section
     const aboutRef = useRef(null);
 
-    // Function to handle mouse movement over the About section
     const handleMouseMove = (e) => {
-        console.log('Mouse moved'); // Debug: Log when mouse moves
         const aboutElement = aboutRef.current;
 
         if (aboutElement) {
-            // Create a new sparkle element
             const sparkle = document.createElement('div');
             sparkle.classList.add('sparkle');
 
-            // Calculate the sparkle position
             const x = e.clientX - aboutElement.getBoundingClientRect().left;
             const y = e.clientY - aboutElement.getBoundingClientRect().top;
 
-            // Set the sparkle position
             sparkle.style.left = `${x}px`;
             sparkle.style.top = `${y}px`;
 
-            // Debug: Log sparkle position and element
-            console.log('Sparkle position:', { x, y });
-            console.log('Sparkle element:', sparkle);
-
-            // Add the sparkle to the About section
             aboutElement.appendChild(sparkle);
 
-            // Remove the sparkle after a short duration
             setTimeout(() => {
                 if (aboutElement.contains(sparkle)) {
                     aboutElement.removeChild(sparkle);
@@ -47,17 +36,18 @@ function About() {
             ref={aboutRef}
             id="about"
             className="about"
-            onMouseMove={handleMouseMove} // Attach mouse movement event handler
+            onMouseMove={handleMouseMove}
         >
-            <div className="moon"></div> {/* Moon element outside of profile-photo-container */}
+            <div className="moon"></div> {/* Moon element */}
 
             <div className="about-container">
-                {/* Profile photo */}
                 <div className="profile-photo-container">
-                    <img src={profilePhoto} alt="Your Name" className="profile-photo" />
+                    <div className="photo-wrapper">
+                        <img src={profilePhoto1} alt="Profile Photo 1" className="profile-photo front" />
+                        <img src={profilePhoto2} alt="Profile Photo 2" className="profile-photo back" />
+                    </div>
                 </div>
 
-                {/* About text */}
                 <div className="about-text">
                     <h2>About Me</h2>
                     <h3>Inquisitive</h3>
